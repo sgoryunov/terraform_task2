@@ -10,3 +10,6 @@ output "Public_ip_address" {
 output "Public_dns" {
   value = resource.aws_instance.web.public_dns
 }
+output "db_endpoint" {
+  value = resource.aws_db_instance.my_db.endpoint
+}
